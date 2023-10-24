@@ -10,6 +10,8 @@ Invalid characters should be ignored.
 
 */
 
+import DeadFish.DeadFish;
+
 public class Main {
     public static void main(String[] args) {
 
