@@ -11,11 +11,17 @@ Invalid characters should be ignored.
 */
 
 import DeadFish.DeadFish;
+import DescendingOrder.DescendingOrder;
 
 public class Main {
     public static void main(String[] args) {
 
         DeadFish df = new DeadFish("iiisdoso");
         System.out.println(df);
+        DescendingOrder Do = new DescendingOrder(10244356);
+        System.out.println(Do);
+        int i = DescendingOrder.sortDesc(10244356);
+        System.out.println(i);
+
     }
 }
