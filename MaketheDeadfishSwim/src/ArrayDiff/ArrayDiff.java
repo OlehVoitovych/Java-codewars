@@ -30,7 +30,7 @@ public class ArrayDiff {
         else {
             return a;
         }*/
-        if (b.length != 0) {
+        /*if (b.length != 0) {
             if (a.length != 0) {
                 List<String> a1 = new ArrayList<>(Arrays.asList((Arrays.toString(a).replaceAll("\\p{Punct}", "")).split(" ")));
                 List<String> b1 = new ArrayList<>(Arrays.asList((Arrays.toString(b).replaceAll("\\p{Punct}", "")).split(" ")));
@@ -44,5 +44,13 @@ public class ArrayDiff {
             else {return new int[] {};}
         }
         else{return a;}
+    }*/
+        if (b.length == 0) {return a;}
+        if (a.length == 0) {return new int[] {};}
+        List<String> a1 = new ArrayList<>(Arrays.asList((Arrays.toString(a).replaceAll("\\p{Punct}", "")).split(" ")));
+        List<String> b1 = new ArrayList<>(Arrays.asList((Arrays.toString(b).replaceAll("\\p{Punct}", "")).split(" ")));
+        a1.removeAll(b1);
+        if (a1.size() == 0) {return new int[] {};}
+        return a1.stream().mapToInt(Integer::parseInt).toArray();
     }
 }
