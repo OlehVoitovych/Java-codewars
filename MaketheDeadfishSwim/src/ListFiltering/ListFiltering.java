@@ -2,6 +2,7 @@ package ListFiltering;
 
 import java.util.*;
 import java.util.stream.Collectors;
+//https://www.codewars.com/kata/53dbd5315a3c69eed20002dd
 
 public class ListFiltering {
     public static List<Object> filterList(final List<Object> list) {
