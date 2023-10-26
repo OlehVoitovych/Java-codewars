@@ -10,8 +10,12 @@ Invalid characters should be ignored.
 
 */
 
+import ArrayDiff.ArrayDiff;
 import DeadFish.DeadFish;
 import DescendingOrder.DescendingOrder;
+import ListFiltering.ListFiltering;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +26,7 @@ public class Main {
         System.out.println(Do);
         int i = DescendingOrder.sortDesc(10244356);
         System.out.println(i);
-
+        int[] arrdif = ArrayDiff.arrayDiff(new int[] {1,1,17,1,12,13,144,2,3,4},new int[] {1,2,3});
+        ListFiltering.filterList(List.of(1, 2, "a", "b"));
     }
 }
